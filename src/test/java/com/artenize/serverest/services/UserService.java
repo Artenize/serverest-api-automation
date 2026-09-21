@@ -8,6 +8,15 @@ import static io.restassured.RestAssured.given;
 
 public class UserService {
 
+    public Response listarUsuarios() {
+
+        return given()
+                .relaxedHTTPSValidation()
+                .baseUri(Configuration.BASE_URL)
+                .when()
+                .get("/usuarios");
+    }
+
     public Response cadastrarUsuario(
             String nome,
             String email,
@@ -15,29 +24,21 @@ public class UserService {
             String administrador
     ) {
 
+        String body = "{"
+                + "\"nome\":\"" + nome + "\","
+                + "\"email\":\"" + email + "\","
+                + "\"password\":\"" + senha + "\","
+                + "\"administrador\":\"" + administrador + "\""
+                + "}";
+
         return given()
                 .relaxedHTTPSValidation()
                 .baseUri(Configuration.BASE_URL)
                 .contentType(ContentType.JSON)
-                .body(
-                        String.format("""
-                        {
-                          "nome": "%s",
-                          "email": "%s",
-                          "password": "%s",
-                          "administrador": "%s"
-                        }
-                        """,
-                                nome,
-                                email,
-                                senha,
-                                administrador
-                        )
-                )
+                .body(body)
                 .when()
                 .post("/usuarios");
     }
-
 
     public Response buscarUsuarioPorId(String idUsuario) {
 
@@ -46,6 +47,38 @@ public class UserService {
                 .baseUri(Configuration.BASE_URL)
                 .when()
                 .get("/usuarios/" + idUsuario);
+    }
 
+    public Response atualizarUsuario(
+            String idUsuario,
+            String nome,
+            String email,
+            String senha,
+            String administrador
+    ) {
+
+        String body = "{"
+                + "\"nome\":\"" + nome + "\","
+                + "\"email\":\"" + email + "\","
+                + "\"password\":\"" + senha + "\","
+                + "\"administrador\":\"" + administrador + "\""
+                + "}";
+
+        return given()
+                .relaxedHTTPSValidation()
+                .baseUri(Configuration.BASE_URL)
+                .contentType(ContentType.JSON)
+                .body(body)
+                .when()
+                .put("/usuarios/" + idUsuario);
+    }
+
+    public Response excluirUsuario(String idUsuario) {
+
+        return given()
+                .relaxedHTTPSValidation()
+                .baseUri(Configuration.BASE_URL)
+                .when()
+                .delete("/usuarios/" + idUsuario);
     }
 }
