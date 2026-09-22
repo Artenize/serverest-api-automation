@@ -1,21 +1,35 @@
-# ServeRest API Automation
+# 🚀 ServeRest API Automation
 
 ![Build Status](https://github.com/Artenize/serverest-api-automation/actions/workflows/ci.yml/badge.svg)
 
-Projeto de automação de testes de API utilizando Java, RestAssured, Cucumber, JUnit 5 e GitHub Actions.
+Projeto de automação de testes de API desenvolvido utilizando **Java**, **RestAssured**, **Cucumber**, **JUnit 5**, **GitHub Actions** e **Allure Report**.
 
-## Tecnologias Utilizadas
+---
+
+## 📋 Sobre o Projeto
+
+Este projeto tem como objetivo validar os principais fluxos da API **ServeRest**, cobrindo cenários positivos e negativos dos principais recursos da aplicação.
+
+A suíte está integrada ao **GitHub Actions**, executando automaticamente a cada push realizado na branch principal e publicando os resultados através do **Allure Report** hospedado no **GitHub Pages**.
+
+---
+
+## 🛠 Tecnologias Utilizadas
 
 - Java 17
 - Maven
 - RestAssured
 - Cucumber
 - JUnit 5
-- Allure Reports
 - Git
+- GitHub
 - GitHub Actions
+- Allure Report
+- GitHub Pages
 
-## Estrutura do Projeto
+---
+
+## 📁 Estrutura do Projeto
 
 ```text
 src
@@ -25,8 +39,7 @@ src
     │       ├── config
     │       ├── runners
     │       ├── services
-    │       ├── steps
-    │       └── utils
+    │       └── steps
     │
     └── resources
         └── features
@@ -36,7 +49,9 @@ src
             └── carrinho.feature
 ```
 
-## Funcionalidades Automatizadas
+---
+
+## ✅ Cenários Automatizados
 
 ### Login
 
@@ -48,7 +63,7 @@ src
 
 - Listar usuários
 - Cadastrar usuário
-- Validar usuário duplicado
+- Validar e-mail duplicado
 - Buscar usuário por ID
 - Atualizar usuário
 - Excluir usuário
@@ -71,16 +86,21 @@ src
 - Concluir compra
 - Cancelar compra
 
-## Cenários Implementados
+---
+
+## 📊 Cobertura Atual
 
 ```text
 21 cenários automatizados
 21 cenários aprovados
 0 falhas
 0 erros
+100% de sucesso
 ```
 
-## Como Executar
+---
+
+## ▶️ Como Executar
 
 Clone o projeto:
 
@@ -100,28 +120,54 @@ Execute os testes:
 mvn clean test
 ```
 
-## Pipeline CI/CD
+---
 
-O projeto possui integração com GitHub Actions.
+## 🔄 Integração Contínua
 
-A cada push para a branch principal é executado:
+O projeto possui pipeline CI/CD utilizando GitHub Actions.
+
+A cada push realizado na branch principal, a pipeline executa automaticamente:
 
 ```bash
 mvn clean test
 ```
 
-garantindo a validação automática da suíte de testes.
+validando toda a suíte de testes.
 
-## Resultado da Execução
+---
+
+## 📈 Allure Report
+
+Relatório publicado automaticamente através do GitHub Pages:
+
+🔗 **https://artenize.github.io/serverest-api-automation/**
+
+O relatório apresenta:
+
+- Status das execuções
+- Histórico dos testes
+- Features executadas
+- Tempo de execução
+- Dashboards visuais
+- Métricas da suíte
+
+---
+
+## 🏆 Resultado da Última Execução
 
 ```text
 Tests run: 21
 Failures: 0
 Errors: 0
 Skipped: 0
+
 BUILD SUCCESS
 ```
 
-## Autor
+---
+
+## 👨‍💻 Autor
 
 **Artenize Brandão Santos Sá Teles**
+
+- GitHub: https://github.com/Artenize
