@@ -1,0 +1,64 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"  Como administrador da ServeRest
+  Quero gerenciar produtos
+  Para manter o catálogo atualizado","79","Listar produtos","","2026-09-22","passed","2026-09-22","","Produtos","Listar produtos",""
+"  Como usuário da ServeRest
+  Quero gerenciar carrinhos
+  Para realizar compras","84","Buscar carrinho inexistente","","2026-09-22","passed","2026-09-22","","Carrinhos","Buscar carrinho inexistente",""
+"  Como usuário da ServeRest
+  Quero gerenciar usuários
+  Para manter os cadastros atualizados","165","Atualizar usuário","","2026-09-22","passed","2026-09-22","","Usuários","Atualizar usuário",""
+"  Como usuário da ServeRest
+  Quero gerenciar usuários
+  Para manter os cadastros atualizados","179","Excluir usuário","","2026-09-22","passed","2026-09-22","","Usuários","Excluir usuário",""
+"  Como usuário da ServeRest
+  Quero autenticar na API
+  Para acessar recursos protegidos","84","Realizar login com senha inválida","","2026-09-22","passed","2026-09-22","","Login","Realizar login com senha inválida",""
+"  Como administrador da ServeRest
+  Quero gerenciar produtos
+  Para manter o catálogo atualizado","176","Cadastrar produto","","2026-09-22","passed","2026-09-22","","Produtos","Cadastrar produto",""
+"  Como administrador da ServeRest
+  Quero gerenciar produtos
+  Para manter o catálogo atualizado","79","Buscar produto com ID inexistente","","2026-09-22","passed","2026-09-22","","Produtos","Buscar produto com ID inexistente",""
+"  Como usuário da ServeRest
+  Quero autenticar na API
+  Para acessar recursos protegidos","97","Realizar login com sucesso","","2026-09-22","passed","2026-09-22","","Login","Realizar login com sucesso",""
+"  Como usuário da ServeRest
+  Quero gerenciar carrinhos
+  Para realizar compras","978","Buscar carrinho por ID","","2026-09-22","passed","2026-09-22","","Carrinhos","Buscar carrinho por ID",""
+"  Como usuário da ServeRest
+  Quero gerenciar carrinhos
+  Para realizar compras","375","Cadastrar carrinho","","2026-09-22","passed","2026-09-22","","Carrinhos","Cadastrar carrinho",""
+"  Como usuário da ServeRest
+  Quero gerenciar usuários
+  Para manter os cadastros atualizados","95","Cadastrar usuário com sucesso","","2026-09-22","passed","2026-09-22","","Usuários","Cadastrar usuário com sucesso",""
+"  Como usuário da ServeRest
+  Quero autenticar na API
+  Para acessar recursos protegidos","70","Realizar login com email inexistente","","2026-09-22","passed","2026-09-22","","Login","Realizar login com email inexistente",""
+"  Como usuário da ServeRest
+  Quero gerenciar carrinhos
+  Para realizar compras","1238","Listar carrinhos","","2026-09-22","passed","2026-09-22","","Carrinhos","Listar carrinhos",""
+"  Como usuário da ServeRest
+  Quero gerenciar carrinhos
+  Para realizar compras","1305","Concluir compra","","2026-09-22","passed","2026-09-22","","Carrinhos","Concluir compra",""
+"  Como administrador da ServeRest
+  Quero gerenciar produtos
+  Para manter o catálogo atualizado","329","Excluir produto","","2026-09-22","passed","2026-09-22","","Produtos","Excluir produto",""
+"  Como administrador da ServeRest
+  Quero gerenciar produtos
+  Para manter o catálogo atualizado","237","Atualizar produto","","2026-09-22","passed","2026-09-22","","Produtos","Atualizar produto",""
+"  Como usuário da ServeRest
+  Quero gerenciar usuários
+  Para manter os cadastros atualizados","186","Cadastrar usuário com email já existente","","2026-09-22","passed","2026-09-22","","Usuários","Cadastrar usuário com email já existente",""
+"  Como usuário da ServeRest
+  Quero gerenciar usuários
+  Para manter os cadastros atualizados","163","Buscar usuário por ID","","2026-09-22","passed","2026-09-22","","Usuários","Buscar usuário por ID",""
+"  Como administrador da ServeRest
+  Quero gerenciar produtos
+  Para manter o catálogo atualizado","185","Buscar produto por ID","","2026-09-22","passed","2026-09-22","","Produtos","Buscar produto por ID",""
+"  Como usuário da ServeRest
+  Quero gerenciar carrinhos
+  Para realizar compras","458","Cancelar compra","","2026-09-22","passed","2026-09-22","","Carrinhos","Cancelar compra",""
+"  Como usuário da ServeRest
+  Quero gerenciar usuários
+  Para manter os cadastros atualizados","56","Listar usuários","","2026-09-22","passed","2026-09-22","","Usuários","Listar usuários",""
